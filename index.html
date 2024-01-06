@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Pack Maker</title>
+
+    <link rel="stylesheet" href="./src/style/main.css">
+    <link rel="icon" type="image/x-icon" href="./src/texture/icon.png">
+
+    <style>
+        @font-face {
+            font-family: minecraft;
+            src: url('./src/font/minecraft.otf');
+        }
+
+        @font-face {
+            font-family: minecraft-ten;
+            src: url('./src/font/minecraft-ten.ttf');
+        }
+    </style>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Skin Pack Maker">
+    <meta property="og:description" content="Create your own skin packs to easily change skins in Minecraft Bedrock">
+    <meta property="og:image" content="https://i.imgur.com/oGv0nbN.jpeg">
+    <meta property="og:url" content="https://asakizuki.github.io/3d-totem-generator/">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Skin Pack Maker">
+    <meta property="twitter:description"
+        content="Create your own skin packs to easily change skins in Minecraft Bedrock">
+    <meta property="twitter:image" content="https://i.imgur.com/oGv0nbN.jpeg">
+    <meta property="twitter:url" content="https://asakizuki.github.io/3d-totem-generator/">
+
+    <script src="./libarries/jszip.min.js"></script>
+</head>
+
+<body>
+    <div class="header">Skin Pack Maker</div>
+    <div class="content">
+        <div class="description">
+            Create your own skin packs to easily change skins in Minecraft Bedrock<br>
+            + Creator: <a href="https://www.youtube.com/channel/UCHzsPoSM57s-VvQy_D6f8ow" target="_blank"
+                class="link">Asaki Zuki</a> (<a href="https://www.facebook.com/profile.php?id=100050536430736"
+                target=" _blank" class="link">Facebook</a>)<br>
+        </div>
+
+        <div class="import_skin_file">
+            <div>
+                <a>Dragger a file here or Click me to import skin</a>
+                <input type="file" id="skin-importer">
+            </div>
+        </div>
+
+        <div class="skin_list" id="skin-list">
+            <div style="background-color: #0005; padding: 5px; 
+            outline: 1px solid #FFF2;">
+                <a id="skin-count">Empty skin :(</a>
+            </div>
+        </div>
+
+        <div class="downloadButton">
+            <button id="download">Download</button>
+            <input id="packName" placeholder="Skin Pack Name...">
+        </div>
+    </div>
+
+    <div class="alert">
+        <div class="dialog"></div>
+    </div>
+
+    <script src="./src/script/main.js"></script>
+    <script src="./src/script/background.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+    "format_version": 1,
+    "header": {
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "description": "Create by Skin Pack Maker",
+        "name": "",
+        "uuid": ""
+    },
+    "modules": [
+        {
+            "version": [
+                1,
+                0,
+                0
+            ],
+            "type": "skin_pack",
+            "uuid": "722b7394-c5c4-4056-afe3-6d3de7c1b9a9"
+        }
+    ]
+}
