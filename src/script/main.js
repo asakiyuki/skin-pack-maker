@@ -155,10 +155,13 @@
             }))
         }
         zip.generateAsync({ type: 'blob' }).then(c => {
-            const i = URL.createObjectURL(c);
-            downloadItem(i, `${skinpackName}.mcpack`);
-            URL.revokeObjectURL(i);
+            if (Object.keys(skinData).length !== 0) {
+                const i = URL.createObjectURL(c);
+                downloadItem(i, `${skinpackName}.mcpack`);
+                URL.revokeObjectURL(i);
+            }
         })
+        clickSound('release.ogg');
     }
     // Draw toggle
     Array.from(_.getElementsByClassName('toggle')).forEach(v => v.innerHTML = `<div class="outside">

@@ -619,7 +619,7 @@ div.skin_item input {
     outline: none;
     outline: 1px solid;
     color: #FFF;
-    font-size: 10px;
+    font-size: 12px;
     padding: 5px;
     outline: 1px solid #000;
 }
@@ -712,7 +712,7 @@ div.downloadButton input {
     position: absolute;
     outline: none;
     outline: 1px solid;
-    font-size: 10px;
+    font-size: 12px;
     padding: 5px;
     outline: 1px solid #000;
     position: absolute;
